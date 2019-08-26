@@ -1,0 +1,97 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AMapFoundation-NO-IDFA (1.5.7)
+  - AMapSearch-NO-IDFA (6.9.0):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - DACircularProgress (2.3.1)
+  - IDMPhotoBrowser (1.10.2):
+    - DACircularProgress
+    - pop
+    - SDWebImage
+  - IQKeyboardManager (6.3.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - pop (1.0.12)
+  - SDWebImage (5.0.3):
+    - SDWebImage/Core (= 5.0.3)
+  - SDWebImage/Core (5.0.3)
+  - TZImagePickerController (3.2.1)
+  - UMCCommon (2.1.0)
+  - UMCSecurityPlugins (1.0.6)
+  - UMCShare/Core (6.9.6):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.9.6):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.6):
+    - UMCCommon
+    - UMCShare/Core
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.2.1)
+  - AMapSearch-NO-IDFA (= 6.9.0)
+  - IDMPhotoBrowser (= 1.10.2)
+  - IQKeyboardManager (= 6.3.0)
+  - Masonry (= 1.1.0)
+  - MBProgressHUD (= 1.1.0)
+  - SDWebImage (= 5.0.3)
+  - TZImagePickerController (= 3.2.1)
+  - UMCCommon
+  - UMCSecurityPlugins
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedWeChat
+  - YYModel (= 1.0.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AMapFoundation-NO-IDFA
+    - AMapSearch-NO-IDFA
+    - DACircularProgress
+    - IDMPhotoBrowser
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - pop
+    - SDWebImage
+    - TZImagePickerController
+    - UMCCommon
+    - UMCSecurityPlugins
+    - UMCShare
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AMapFoundation-NO-IDFA: 9088085827c831811bb0fd3afd96b99963a7cf71
+  AMapSearch-NO-IDFA: 264999e6c149383a8f164c2fe49b51513e93d674
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  IDMPhotoBrowser: 4bb459b1faffc228e92bccdf7c54ad6d6b7e8c37
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
+  TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
+  UMCCommon: c9637200488c482b30cdebebb0bd595b9adf0847
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMCShare: e0cef55c0fd6051254c8cda1d0630eb578b27bad
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 7926bfc05687dd1932f87d5fca535004073bfde4
+
+COCOAPODS: 1.7.1

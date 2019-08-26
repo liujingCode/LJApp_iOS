@@ -1,0 +1,43 @@
+platform :ios, '9.0'
+
+target 'LJApp' do
+
+# 布局管理
+pod "Masonry","1.1.0"
+# 图片管理
+pod "SDWebImage", "5.0.3"
+# 弹框
+pod "MBProgressHUD","1.1.0"
+# 相册选择
+pod "TZImagePickerController", "3.2.1"
+# 网络
+pod "AFNetworking", "3.2.1"
+# json转模型
+pod "YYModel","1.0.4"
+# 键盘管理
+pod "IQKeyboardManager","6.3.0"
+# 照片浏览器
+pod "IDMPhotoBrowser","1.10.2"
+# 高德POI检索
+pod "AMapSearch-NO-IDFA","6.9.0"
+
+# 友盟分享
+pod 'UMCCommon'
+pod 'UMCSecurityPlugins'
+# 集成微信(精简版0.2M)
+pod 'UMCShare/Social/ReducedWeChat'
+# 集成QQ/QZone/TIM(精简版0.5M)
+pod 'UMCShare/Social/ReducedQQ'
+
+
+  target 'LJAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'LJAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

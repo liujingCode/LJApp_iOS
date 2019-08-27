@@ -10,4 +10,11 @@
 
 @implementation UITextField (LJKit)
 
+
++ (instancetype)lj_defaultTextField {
+    UITextField *textField = [UITextField new];
+    textField.font = [UIFont systemFontOfSize:15.0];
+    textField.textColor = [UIColor lj_colorWithHexString:@"0x333333"];
+    return textField;
+}
 @end

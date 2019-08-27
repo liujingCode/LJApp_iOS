@@ -55,7 +55,7 @@
     }
     
     // 上传
-    if (request.requestType == LJHttpRequestTypeUpload) { // 上传
+    if (request.requestType == LJHttpRequestTypeUpload) {
         return [manager POST:request.urlStr parameters:request.params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             for (LJHttpUploadModel *uploadModel in request.uploadFileList) {
                 [formData appendPartWithFileData:uploadModel.data name:uploadModel.key fileName:uploadModel.fileName mimeType:uploadModel.fileType];

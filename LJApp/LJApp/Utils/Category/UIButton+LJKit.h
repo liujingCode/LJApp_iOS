@@ -1,5 +1,5 @@
 //
-//  UITextField+LJKit.h
+//  UIButton+LJKit.h
 //  LJApp
 //
 //  Created by developer on 2019/8/26.
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITextField (LJKit)
-+ (instancetype)lj_defaultTextField;
+@interface UIButton (LJKit)
++ (instancetype)lj_defaultBtnWithTitle:(NSString *)title;
 @end
 
 NS_ASSUME_NONNULL_END

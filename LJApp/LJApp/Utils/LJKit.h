@@ -9,7 +9,10 @@
 #ifndef LJKit_h
 #define LJKit_h
 
-#import "LJCategory.h"
 
+
+#import "LJCategory.h"
+#import "LJHttpManager.h"
+#import "LJKitDefine.h"
 
 #endif /* LJKit_h */

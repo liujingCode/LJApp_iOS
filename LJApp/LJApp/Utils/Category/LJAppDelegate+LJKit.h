@@ -7,6 +7,7 @@
 //
 
 #import "LJAppDelegate.h"
+@class LJDialogWindow;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
  AppDelegate 服务类,用于AppDelegate解耦
  */
 @interface LJAppDelegate (LJKit)
+
+/** dialogWindow */
+@property (nonatomic, strong) LJDialogWindow *dialogWindow;
 
 /**
  设置根控制器

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (LJKit)
@@ -53,6 +54,16 @@ NS_ASSUME_NONNULL_BEGIN
 /** 阴影半径 */
 @property (assign, nonatomic) IBInspectable CGFloat lj_shadowRadius;
 
+/** 底部分割线 */
+@property (nonatomic, assign) IBInspectable BOOL lj_enableBottomLine;
+/** 底部分割线的颜色 */
+@property(copy, nonatomic) IBInspectable UIColor *lj_bottomLineColor;
+
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_lj_safeTop;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_lj_safeBottom;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_lj_safeLeft;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_lj_safeRight;
+
 
 /**
  获取截图
@@ -60,6 +71,26 @@ NS_ASSUME_NONNULL_BEGIN
  @return 该view的截图
  */
 - (UIImage *)lj_getSnapShotImage;
+
+
+/**
+ 移除所有子控件
+ */
+- (void)lj_removeAllSubViews;
+
+
+/**
+ 获取view所在的控制器
+
+ @return 控制器
+ */
+- (UIViewController *)lj_viewController;
+
+
+/**
+ 设置子控件约束
+ */
+- (void)setupSubviewLayouts;
 
 @end
 

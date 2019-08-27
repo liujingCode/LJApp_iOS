@@ -8,6 +8,11 @@
 
 #import "UIView+LJKit.h"
 
+@interface UIView ()
+/** 底部分割线 */
+@property (nonatomic, weak) UIView *lj_bottomLineView;
+@end
+
 @implementation UIView (LJKit)
 - (void)setLj_x:(CGFloat)lj_x {
     CGRect frame = self.frame;
@@ -162,6 +167,76 @@
     return self.layer.shadowRadius;
 }
 
+#pragma mark - 底部分割线
+- (void)setLj_enableBottomLine:(BOOL)lj_enableBottomLine {
+    objc_setAssociatedObject(self, @selector(setLj_enableBottomLine:), @(lj_enableBottomLine), OBJC_ASSOCIATION_ASSIGN);
+    if (lj_enableBottomLine) { // 激活分割线
+        UIView *lineView = [[UIView alloc] init];
+        lineView.backgroundColor = [UIColor lj_colorWithHexString:@"0xbbbbbb"];
+        [self addSubview:lineView];
+        [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(1.0);
+            make.left.right.bottom.equalTo(self);
+        }];
+        self.lj_bottomLineView = lineView;
+    } else {
+        [self.bottomLineView removeFromSuperview];
+        self.lj_bottomLineView = nil;
+    }
+}
+- (BOOL)lj_enableBottomLine {
+    return objc_getAssociatedObject(self, @selector(setLj_enableBottomLine:));
+}
+
+- (void)setLj_bottomLineView:(UIView *)lj_bottomLineView {
+    objc_setAssociatedObject(self, @selector(setLj_bottomLineView:), lj_bottomLineView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+- (UIView *)lj_bottomLineView {
+    return objc_getAssociatedObject(self, @selector(setLj_bottomLineView:));
+}
+
+- (void)setLj_bottomLineColor:(UIColor *)lj_bottomLineColor {
+    self.lj_bottomLineView.backgroundColor = lj_bottomLineColor;
+}
+- (UIColor *)lj_bottomLineColor {
+    return self.lj_bottomLineView.backgroundColor;
+}
+
+#pragma mark - masonry
+- (MASViewAttribute *)mas_lj_safeTop {
+    if (@available(iOS 11.0, *)) {
+        return [[MASViewAttribute alloc] initWithView:self item:self.safeAreaLayoutGuide layoutAttribute:NSLayoutAttributeTop];
+    } else {
+        return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeTop];
+    }
+}
+
+- (MASViewAttribute *)mas_lj_safeBottom {
+    if (@available(iOS 11.0, *)) {
+        return [[MASViewAttribute alloc] initWithView:self item:self.safeAreaLayoutGuide layoutAttribute:NSLayoutAttributeBottom];
+    } else {
+        // Fallback on earlier versions
+        return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeBottom];
+    }
+}
+
+- (MASViewAttribute *)mas_lj_safeLeft {
+    if (@available(iOS 11.0, *)) {
+        return [[MASViewAttribute alloc] initWithView:self item:self.safeAreaLayoutGuide layoutAttribute:NSLayoutAttributeLeft];
+    } else {
+        return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeLeft];
+    }
+}
+
+- (MASViewAttribute *)mas_lj_safeRight {
+    if (@available(iOS 11.0, *)) {
+        return [[MASViewAttribute alloc] initWithView:self item:self.safeAreaLayoutGuide layoutAttribute:NSLayoutAttributeRight];
+    } else {
+        return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeRight];
+    }
+}
+
+
 
 
 
@@ -171,6 +246,59 @@
  @return 该view的截图
  */
 - (UIImage *)lj_getSnapShotImage {
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0);
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+/**
+ 移除所有子控件
+ */
+- (void)lj_removeAllSubViews {
+    for (UIView *view in self.subviews) {
+        [view removeFromSuperview];
+    }
+}
+
+/**
+ 获取view所在的控制器
+ 
+ @return 控制器
+ */
+- (UIViewController *)lj_viewController {
+    for (UIView* next = [self superview];next; next = next.superview) {
+        UIResponder* nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController*)nextResponder;
+        }
+    }
     return nil;
+}
+
+
+/**
+ 设置子控件约束
+ */
+- (void)setupSubviewLayouts {
+    
+}
+
+
+
+#pragma mark - 懒加载UI
+- (UIView *)bottomLineView {
+    UIView *lineView = objc_getAssociatedObject(self, _cmd);
+    if (!lineView) {
+        lineView = [[UIView alloc] init];
+        [self addSubview:lineView];
+        [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(1.0);
+            make.left.right.bottom.equalTo(self).offset(-0.0);
+        }];
+        objc_setAssociatedObject(self, _cmd, lineView, OBJC_ASSOCIATION_RETAIN);
+    }
+    return lineView;
 }
 @end

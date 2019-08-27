@@ -1,8 +1,8 @@
 //
-//  UITextField+LJKit.h
+//  LJActionSheetWindow.h
 //  LJApp
 //
-//  Created by developer on 2019/8/26.
+//  Created by developer on 2019/8/27.
 //  Copyright © 2019 liujing. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITextField (LJKit)
-+ (instancetype)lj_defaultTextField;
+@interface LJActionSheetWindow : UIWindow
+
 @end
 
 NS_ASSUME_NONNULL_END

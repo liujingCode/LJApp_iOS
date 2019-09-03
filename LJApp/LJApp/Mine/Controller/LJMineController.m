@@ -10,6 +10,7 @@
 
 #import "LJShareView.h"
 #import "LJDialogNormalView.h"
+#import "LJSandboxViewController.h"
 
 @interface LJMineController ()
 
@@ -25,17 +26,16 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    // 分享
-//    [LJShareView showWithCallback:^(LJShareViewResult * _Nonnull result) {
-//        NSLog(@"分享:success = %d, message = %@",result.success,result.message);
-//    }];
+    UIViewController *targetVC = nil;
+    // 沙盒
+    LJSandBoxViewController *sandBoxVC = [LJSandBoxViewController new];
+    targetVC = sandBoxVC;
     
-    // dialog
-    LJDialogNormalView *dialog = [[LJDialogNormalView alloc] initWithTitle:@"温馨提示" andMessage:@"确定要执行这个重要操作?" andButtonTitles:@[@"确定",@"取消"] andActionCallback:^(NSInteger index) {
-        
-    }];
+    [self.navigationController pushViewController:targetVC animated:YES];
+    [self presentViewController:targetVC animated:YES completion:nil];
     
-    [dialog show];
+    
+
 }
 
 @end

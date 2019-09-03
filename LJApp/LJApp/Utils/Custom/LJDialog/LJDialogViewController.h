@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LJDialogViewController : UIViewController
 
+- (void)addDialogView;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -102,4 +102,19 @@
     NSDateComponents *selfCmps = [calendar components:unit fromDate:self];
     return nowCmps.year == selfCmps.year;
 }
+
++ (NSString*)lj_weekdayStrWithDate:(NSDate *)date {
+    NSCalendarUnit components = (NSCalendarUnit)(NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekday|NSCalendarUnitHour | NSCalendarUnitMinute);
+    
+    NSDateComponents *weekday = [[NSCalendar currentCalendar] components:components fromDate:date];
+    static NSDictionary *daysOfWeekDict = nil;
+    daysOfWeekDict = @{@(1):@"星期日",
+                       @(2):@"星期一",
+                       @(3):@"星期二",
+                       @(4):@"星期三",
+                       @(5):@"星期四",
+                       @(6):@"星期五",
+                       @(7):@"星期六",};
+    return [daysOfWeekDict objectForKey:@(weekday.weekday)];
+}
 @end

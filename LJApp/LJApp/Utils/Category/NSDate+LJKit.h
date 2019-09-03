@@ -69,6 +69,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)lj_isThisYear;
 
+
+/**
+ 获取星期信息
+
+ @param date date
+ @return 周几
+ */
++ (NSString*)lj_weekdayStrWithDate:(NSDate *)date;
+
 @end
 
 NS_ASSUME_NONNULL_END

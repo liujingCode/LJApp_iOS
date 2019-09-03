@@ -56,4 +56,18 @@
 
 }
 
+
+#pragma mark - 控制屏幕旋转方法
+// 是否允许旋转
+- (BOOL)shouldAutorotate{
+    return [self.selectedViewController shouldAutorotate];
+}
+// push支持哪些方向的旋转
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return [self.selectedViewController supportedInterfaceOrientations];
+}
+// present支持哪些方向旋转
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
+}
 @end

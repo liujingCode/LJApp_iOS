@@ -19,6 +19,10 @@
     
 }
 
+- (void)addDialogView {
+
+}
+
 /*
 #pragma mark - Navigation
 

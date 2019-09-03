@@ -9,6 +9,8 @@
 #ifndef LJCategory_h
 #define LJCategory_h
 
+#import "NSObject+LJKit.h"
+
 #import "LJAppDelegate+LJKit.h"
 #import "NSDate+LJKit.h"
 #import "NSString+LJKit.h"

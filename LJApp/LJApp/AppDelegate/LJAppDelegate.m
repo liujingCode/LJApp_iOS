@@ -20,4 +20,12 @@
     [self setupLaunchConfig];
     return YES;
 }
+
+///* 横竖屏 */
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+//    if (self.allowRotation) { // 只允许横屏
+//        return  UIInterfaceOrientationMaskLandscape;
+//    }
+//    return UIInterfaceOrientationMaskPortrait;
+//}
 @end

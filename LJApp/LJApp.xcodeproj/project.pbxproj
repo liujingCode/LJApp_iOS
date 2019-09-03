@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		2D493DD757FD9E4CC0D4FFF6 /* libPods-LJAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA846CCD4007AD3AB053243 /* libPods-LJAppTests.a */; };
 		41C1D5CA123400FD79935273 /* libPods-LJAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526221630CF3087BB1F931F5 /* libPods-LJAppUITests.a */; };
+		8B0414872318F3A8008E3D16 /* LJGlobalConfigInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0414862318F3A8008E3D16 /* LJGlobalConfigInfo.m */; };
+		8B04148A2318FE74008E3D16 /* LJViewControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0414892318FE74008E3D16 /* LJViewControllerConfig.m */; };
+		8B041493231B9D4B008E3D16 /* nav_more_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B04148D231B9D4B008E3D16 /* nav_more_white@3x.png */; };
+		8B041494231B9D4B008E3D16 /* nav_more_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B04148E231B9D4B008E3D16 /* nav_more_white@2x.png */; };
+		8B041495231B9D4B008E3D16 /* nav_more_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B04148F231B9D4B008E3D16 /* nav_more_white.png */; };
+		8B041496231B9D4B008E3D16 /* nav_more_black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B041490231B9D4B008E3D16 /* nav_more_black@3x.png */; };
+		8B041497231B9D4B008E3D16 /* nav_more_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B041491231B9D4B008E3D16 /* nav_more_black@2x.png */; };
+		8B041498231B9D4B008E3D16 /* nav_more_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B041492231B9D4B008E3D16 /* nav_more_black.png */; };
+		8B04149B231B9DC0008E3D16 /* LJDesktopClockControlSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B04149A231B9DC0008E3D16 /* LJDesktopClockControlSettingsView.m */; };
+		8B0C68BA2317AD3300A8B7E4 /* LJModulesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C68B92317AD3300A8B7E4 /* LJModulesModel.m */; };
+		8B0C68BD2317AE7F00A8B7E4 /* LJModulesGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C68BC2317AE7F00A8B7E4 /* LJModulesGroupModel.m */; };
+		8B0C68C02317B10900A8B7E4 /* LJModulesCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C68BF2317B10900A8B7E4 /* LJModulesCollectionView.m */; };
+		8B0C68C32317B4FC00A8B7E4 /* LJModulesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C68C22317B4FC00A8B7E4 /* LJModulesCollectionViewCell.m */; };
 		8BAC645D231501A600BD3169 /* LJShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC645C231501A600BD3169 /* LJShareView.m */; };
 		8BAC64612315103A00BD3169 /* LJShareContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC64602315103A00BD3169 /* LJShareContentView.m */; };
 		8BAC6470231522B700BD3169 /* LJDialogBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC646F231522B700BD3169 /* LJDialogBaseView.m */; };
@@ -16,6 +29,7 @@
 		8BBA7948231580E900C56A89 /* LJDialogWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA7947231580E900C56A89 /* LJDialogWindow.m */; };
 		8BBA794B231580FA00C56A89 /* LJActionSheetWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA794A231580FA00C56A89 /* LJActionSheetWindow.m */; };
 		8BBA794E2315829800C56A89 /* LJDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA794D2315829800C56A89 /* LJDialogViewController.m */; };
+		8BC3D2ED231EC98C00ACA77D /* LJSandBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3D2EC231EC98C00ACA77D /* LJSandBoxViewController.m */; };
 		8BDA4F8623141CDF0088009C /* LJLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA4F8523141CDF0088009C /* LJLoginView.m */; };
 		8BDA4F8D231423190088009C /* UIViewController+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA4F8C231423190088009C /* UIViewController+LJKit.m */; };
 		8BDA4F90231423F50088009C /* UIButton+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA4F8F231423F50088009C /* UIButton+LJKit.m */; };
@@ -47,7 +61,6 @@
 		8BDCD7C823138516003FD426 /* LJHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7C723138516003FD426 /* LJHomeController.m */; };
 		8BDCD7CB23138525003FD426 /* LJDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7CA23138525003FD426 /* LJDiscoverController.m */; };
 		8BDCD7CE2313853B003FD426 /* LJMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7CD2313853B003FD426 /* LJMineController.m */; };
-		8BDCD7D22313A2FD003FD426 /* LJAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7D12313A2FD003FD426 /* LJAppInfo.m */; };
 		8BDCD7D52313A4C8003FD426 /* UIColor+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7D42313A4C8003FD426 /* UIColor+LJKit.m */; };
 		8BDCD7EE2313C2C9003FD426 /* LJHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7ED2313C2C9003FD426 /* LJHttpManager.m */; };
 		8BDCD7F12313C340003FD426 /* LJHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7F02313C340003FD426 /* LJHttpResponse.m */; };
@@ -56,6 +69,15 @@
 		8BDCD7FA2313C3B3003FD426 /* LJHttpRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7F92313C3B3003FD426 /* LJHttpRequestSerializer.m */; };
 		8BDCD7FD2313CE50003FD426 /* LJHttpUploadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7FC2313CE50003FD426 /* LJHttpUploadModel.m */; };
 		8BDCD8002313D740003FD426 /* UIImageView+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD7FF2313D740003FD426 /* UIImageView+LJKit.m */; };
+		8BE7D3D9231CB6B3006BB060 /* LJDebugManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D3D8231CB6B3006BB060 /* LJDebugManager.m */; };
+		8BE7D3DC231CB815006BB060 /* LJDebugColorStrawManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D3DB231CB815006BB060 /* LJDebugColorStrawManager.m */; };
+		8BE7D3E7231CBE4D006BB060 /* LJTableViewSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D3E6231CBE4D006BB060 /* LJTableViewSliderCell.m */; };
+		8BE7D3EA231CBE61006BB060 /* LJTableViewSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D3E9231CBE61006BB060 /* LJTableViewSwitchCell.m */; };
+		8BE7D3ED231CBEA1006BB060 /* LJTableViewTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D3EC231CBEA1006BB060 /* LJTableViewTextFieldCell.m */; };
+		8BE7D3F0231CD9E7006BB060 /* UIView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D3EF231CD9E7006BB060 /* UIView+Gesture.m */; };
+		8BE7D3F3231CE492006BB060 /* UIGestureRecognizer+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D3F2231CE492006BB060 /* UIGestureRecognizer+LJKit.m */; };
+		8BE7D3F6231CFAA0006BB060 /* LJDesktopClockContentEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D3F5231CFAA0006BB060 /* LJDesktopClockContentEditView.m */; };
+		8BF1CADC23164FE7006D3CF6 /* NSObject+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1CADA23164FE6006D3CF6 /* NSObject+LJKit.m */; };
 		8FBC15C9C2C4EAC3A94FAA2E /* libPods-LJApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED634A4C4E9893A5D427805D /* libPods-LJApp.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +104,26 @@
 		526221630CF3087BB1F931F5 /* libPods-LJAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LJAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA846CCD4007AD3AB053243 /* libPods-LJAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LJAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E23E4202E0C47093550886 /* Pods-LJAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LJAppTests/Pods-LJAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B0414852318F3A8008E3D16 /* LJGlobalConfigInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGlobalConfigInfo.h; sourceTree = "<group>"; };
+		8B0414862318F3A8008E3D16 /* LJGlobalConfigInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGlobalConfigInfo.m; sourceTree = "<group>"; };
+		8B0414882318FE74008E3D16 /* LJViewControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJViewControllerConfig.h; sourceTree = "<group>"; };
+		8B0414892318FE74008E3D16 /* LJViewControllerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJViewControllerConfig.m; sourceTree = "<group>"; };
+		8B04148D231B9D4B008E3D16 /* nav_more_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_more_white@3x.png"; sourceTree = "<group>"; };
+		8B04148E231B9D4B008E3D16 /* nav_more_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_more_white@2x.png"; sourceTree = "<group>"; };
+		8B04148F231B9D4B008E3D16 /* nav_more_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_more_white.png; sourceTree = "<group>"; };
+		8B041490231B9D4B008E3D16 /* nav_more_black@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_more_black@3x.png"; sourceTree = "<group>"; };
+		8B041491231B9D4B008E3D16 /* nav_more_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_more_black@2x.png"; sourceTree = "<group>"; };
+		8B041492231B9D4B008E3D16 /* nav_more_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_more_black.png; sourceTree = "<group>"; };
+		8B041499231B9DC0008E3D16 /* LJDesktopClockControlSettingsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDesktopClockControlSettingsView.h; sourceTree = "<group>"; };
+		8B04149A231B9DC0008E3D16 /* LJDesktopClockControlSettingsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDesktopClockControlSettingsView.m; sourceTree = "<group>"; };
+		8B0C68B82317AD3300A8B7E4 /* LJModulesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJModulesModel.h; sourceTree = "<group>"; };
+		8B0C68B92317AD3300A8B7E4 /* LJModulesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJModulesModel.m; sourceTree = "<group>"; };
+		8B0C68BB2317AE7F00A8B7E4 /* LJModulesGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJModulesGroupModel.h; sourceTree = "<group>"; };
+		8B0C68BC2317AE7F00A8B7E4 /* LJModulesGroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJModulesGroupModel.m; sourceTree = "<group>"; };
+		8B0C68BE2317B10900A8B7E4 /* LJModulesCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJModulesCollectionView.h; sourceTree = "<group>"; };
+		8B0C68BF2317B10900A8B7E4 /* LJModulesCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJModulesCollectionView.m; sourceTree = "<group>"; };
+		8B0C68C12317B4FC00A8B7E4 /* LJModulesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJModulesCollectionViewCell.h; sourceTree = "<group>"; };
+		8B0C68C22317B4FC00A8B7E4 /* LJModulesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJModulesCollectionViewCell.m; sourceTree = "<group>"; };
 		8BAC64592314F8EF00BD3169 /* LJKitDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJKitDefine.h; sourceTree = "<group>"; };
 		8BAC645B231501A600BD3169 /* LJShareView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJShareView.h; sourceTree = "<group>"; };
 		8BAC645C231501A600BD3169 /* LJShareView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJShareView.m; sourceTree = "<group>"; };
@@ -97,6 +139,8 @@
 		8BBA794A231580FA00C56A89 /* LJActionSheetWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJActionSheetWindow.m; sourceTree = "<group>"; };
 		8BBA794C2315829800C56A89 /* LJDialogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDialogViewController.h; sourceTree = "<group>"; };
 		8BBA794D2315829800C56A89 /* LJDialogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDialogViewController.m; sourceTree = "<group>"; };
+		8BC3D2EB231EC98C00ACA77D /* LJSandBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSandBoxViewController.h; sourceTree = "<group>"; };
+		8BC3D2EC231EC98C00ACA77D /* LJSandBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSandBoxViewController.m; sourceTree = "<group>"; };
 		8BDA4F8423141CDF0088009C /* LJLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJLoginView.h; sourceTree = "<group>"; };
 		8BDA4F8523141CDF0088009C /* LJLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJLoginView.m; sourceTree = "<group>"; };
 		8BDA4F8B231423190088009C /* UIViewController+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJKit.h"; sourceTree = "<group>"; };
@@ -165,8 +209,6 @@
 		8BDCD7CA23138525003FD426 /* LJDiscoverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDiscoverController.m; sourceTree = "<group>"; };
 		8BDCD7CC2313853B003FD426 /* LJMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJMineController.h; sourceTree = "<group>"; };
 		8BDCD7CD2313853B003FD426 /* LJMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJMineController.m; sourceTree = "<group>"; };
-		8BDCD7D02313A2FD003FD426 /* LJAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAppInfo.h; sourceTree = "<group>"; };
-		8BDCD7D12313A2FD003FD426 /* LJAppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJAppInfo.m; sourceTree = "<group>"; };
 		8BDCD7D32313A4C8003FD426 /* UIColor+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LJKit.h"; sourceTree = "<group>"; };
 		8BDCD7D42313A4C8003FD426 /* UIColor+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LJKit.m"; sourceTree = "<group>"; };
 		8BDCD7EC2313C2C9003FD426 /* LJHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHttpManager.h; sourceTree = "<group>"; };
@@ -183,6 +225,25 @@
 		8BDCD7FC2313CE50003FD426 /* LJHttpUploadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJHttpUploadModel.m; sourceTree = "<group>"; };
 		8BDCD7FE2313D740003FD426 /* UIImageView+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LJKit.h"; sourceTree = "<group>"; };
 		8BDCD7FF2313D740003FD426 /* UIImageView+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LJKit.m"; sourceTree = "<group>"; };
+		8BE7D3D3231CB5DD006BB060 /* LJDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDebug.h; sourceTree = "<group>"; };
+		8BE7D3D7231CB6B3006BB060 /* LJDebugManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDebugManager.h; sourceTree = "<group>"; };
+		8BE7D3D8231CB6B3006BB060 /* LJDebugManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDebugManager.m; sourceTree = "<group>"; };
+		8BE7D3DA231CB815006BB060 /* LJDebugColorStrawManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDebugColorStrawManager.h; sourceTree = "<group>"; };
+		8BE7D3DB231CB815006BB060 /* LJDebugColorStrawManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDebugColorStrawManager.m; sourceTree = "<group>"; };
+		8BE7D3E5231CBE4D006BB060 /* LJTableViewSliderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJTableViewSliderCell.h; sourceTree = "<group>"; };
+		8BE7D3E6231CBE4D006BB060 /* LJTableViewSliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJTableViewSliderCell.m; sourceTree = "<group>"; };
+		8BE7D3E8231CBE61006BB060 /* LJTableViewSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJTableViewSwitchCell.h; sourceTree = "<group>"; };
+		8BE7D3E9231CBE61006BB060 /* LJTableViewSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJTableViewSwitchCell.m; sourceTree = "<group>"; };
+		8BE7D3EB231CBEA1006BB060 /* LJTableViewTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJTableViewTextFieldCell.h; sourceTree = "<group>"; };
+		8BE7D3EC231CBEA1006BB060 /* LJTableViewTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJTableViewTextFieldCell.m; sourceTree = "<group>"; };
+		8BE7D3EE231CD9E7006BB060 /* UIView+Gesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Gesture.h"; sourceTree = "<group>"; };
+		8BE7D3EF231CD9E7006BB060 /* UIView+Gesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gesture.m"; sourceTree = "<group>"; };
+		8BE7D3F1231CE492006BB060 /* UIGestureRecognizer+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+LJKit.h"; sourceTree = "<group>"; };
+		8BE7D3F2231CE492006BB060 /* UIGestureRecognizer+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+LJKit.m"; sourceTree = "<group>"; };
+		8BE7D3F4231CFAA0006BB060 /* LJDesktopClockContentEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDesktopClockContentEditView.h; sourceTree = "<group>"; };
+		8BE7D3F5231CFAA0006BB060 /* LJDesktopClockContentEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDesktopClockContentEditView.m; sourceTree = "<group>"; };
+		8BF1CADA23164FE6006D3CF6 /* NSObject+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LJKit.m"; sourceTree = "<group>"; };
+		8BF1CADB23164FE6006D3CF6 /* NSObject+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LJKit.h"; sourceTree = "<group>"; };
 		9C228310F5EA64CD03838FFE /* Pods-LJAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJAppUITests.release.xcconfig"; path = "Target Support Files/Pods-LJAppUITests/Pods-LJAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D0AA3F6EA1FAFD3168CA1C1F /* Pods-LJApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJApp.debug.xcconfig"; path = "Target Support Files/Pods-LJApp/Pods-LJApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DDD39EE9C20DD6CD882B91CA /* Pods-LJAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJAppTests.release.xcconfig"; path = "Target Support Files/Pods-LJAppTests/Pods-LJAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +288,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B0414832318C1CB008E3D16 /* LJLoading */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LJLoading;
+			sourceTree = "<group>";
+		};
+		8B0414842318C1FA008E3D16 /* LJEmptyDataView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LJEmptyDataView;
+			sourceTree = "<group>";
+		};
+		8B04148C231B9D4B008E3D16 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8B04148D231B9D4B008E3D16 /* nav_more_white@3x.png */,
+				8B04148E231B9D4B008E3D16 /* nav_more_white@2x.png */,
+				8B04148F231B9D4B008E3D16 /* nav_more_white.png */,
+				8B041490231B9D4B008E3D16 /* nav_more_black@3x.png */,
+				8B041491231B9D4B008E3D16 /* nav_more_black@2x.png */,
+				8B041492231B9D4B008E3D16 /* nav_more_black.png */,
+			);
+			name = images;
+			path = Resources/images;
+			sourceTree = "<group>";
+		};
+		8B0C68C42317C4BA00A8B7E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8BAC645E23150F8900BD3169 /* LJShare */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +346,7 @@
 		8BDA4F8323141C7B0088009C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8BE7D3E4231CBDF1006BB060 /* Globel */,
 				8BDA4F982314C36C0088009C /* DesktopClock */,
 			);
 			path = Modules;
@@ -275,10 +372,18 @@
 		8BDA4F9A2314C39E0088009C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8BE7D3F4231CFAA0006BB060 /* LJDesktopClockContentEditView.h */,
+				8BE7D3F5231CFAA0006BB060 /* LJDesktopClockContentEditView.m */,
 				8BDA4F9F2314C4850088009C /* LJDesktopClockContentView.h */,
 				8BDA4FA02314C4850088009C /* LJDesktopClockContentView.m */,
 				8BDA4FA22314C4960088009C /* LJDesktopClockControlView.h */,
 				8BDA4FA32314C4960088009C /* LJDesktopClockControlView.m */,
+				8B041499231B9DC0008E3D16 /* LJDesktopClockControlSettingsView.h */,
+				8B04149A231B9DC0008E3D16 /* LJDesktopClockControlSettingsView.m */,
+				8BE7D3EE231CD9E7006BB060 /* UIView+Gesture.h */,
+				8BE7D3EF231CD9E7006BB060 /* UIView+Gesture.m */,
+				8BE7D3F1231CE492006BB060 /* UIGestureRecognizer+LJKit.h */,
+				8BE7D3F2231CE492006BB060 /* UIGestureRecognizer+LJKit.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +432,8 @@
 				8BDCD76C2313750A003FD426 /* Discover */,
 				8BDCD76D23137513003FD426 /* Mine */,
 				8BDCD76F23137553003FD426 /* Utils */,
+				8B0C68C42317C4BA00A8B7E4 /* Resources */,
+				8B04148C231B9D4B008E3D16 /* images */,
 				8BDCD770231375CC003FD426 /* Supporting Files */,
 			);
 			path = LJApp;
@@ -403,6 +510,7 @@
 			children = (
 				8BDCD78623137A50003FD426 /* LJKit.h */,
 				8BAC64592314F8EF00BD3169 /* LJKitDefine.h */,
+				8BE7D3D2231CB5BA006BB060 /* LJDebug */,
 				8BDCD79A23138019003FD426 /* Custom */,
 				8BDCD77423137703003FD426 /* Category */,
 			);
@@ -426,6 +534,8 @@
 			isa = PBXGroup;
 			children = (
 				8BDCD784231378B3003FD426 /* LJCategory.h */,
+				8BF1CADB23164FE6006D3CF6 /* NSObject+LJKit.h */,
+				8BF1CADA23164FE6006D3CF6 /* NSObject+LJKit.m */,
 				8BDCD78123137820003FD426 /* LJAppDelegate+LJKit.h */,
 				8BDCD78223137820003FD426 /* LJAppDelegate+LJKit.m */,
 				8BDCD78E23137EB6003FD426 /* NSDate+LJKit.h */,
@@ -459,6 +569,8 @@
 				8BDCD7762313774F003FD426 /* LJBaseNavigationController.m */,
 				8BDCD7AB23138415003FD426 /* LJBaseViewController.h */,
 				8BDCD7AC23138415003FD426 /* LJBaseViewController.m */,
+				8B0414882318FE74008E3D16 /* LJViewControllerConfig.h */,
+				8B0414892318FE74008E3D16 /* LJViewControllerConfig.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -484,13 +596,15 @@
 		8BDCD79A23138019003FD426 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				8B0414842318C1FA008E3D16 /* LJEmptyDataView */,
 				8BBA7945231580C100C56A89 /* LJWindow */,
 				8BAC645E23150F8900BD3169 /* LJShare */,
-				8BDCD7CF2313A2DE003FD426 /* LJAppInfo */,
+				8BDCD7CF2313A2DE003FD426 /* LJGlobalConfigInfo */,
 				8BDCD7A023138133003FD426 /* LJThemeManager */,
 				8BDCD79E231380E4003FD426 /* LJFileCacheManager */,
 				8BDCD79D23138089003FD426 /* LJLocationManager */,
 				8BDCD79C2313807A003FD426 /* LJHttpManager */,
+				8B0414832318C1CB008E3D16 /* LJLoading */,
 				8BDCD7A7231382F8003FD426 /* LJActionSheet */,
 				8BDCD7A62313821E003FD426 /* LJDialog */,
 				8BDCD79B23138048003FD426 /* LJToast */,
@@ -630,6 +744,10 @@
 		8BDCD7BE231384C0003FD426 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8B0C68BE2317B10900A8B7E4 /* LJModulesCollectionView.h */,
+				8B0C68BF2317B10900A8B7E4 /* LJModulesCollectionView.m */,
+				8B0C68C12317B4FC00A8B7E4 /* LJModulesCollectionViewCell.h */,
+				8B0C68C22317B4FC00A8B7E4 /* LJModulesCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -637,6 +755,10 @@
 		8BDCD7BF231384C6003FD426 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B0C68B82317AD3300A8B7E4 /* LJModulesModel.h */,
+				8B0C68B92317AD3300A8B7E4 /* LJModulesModel.m */,
+				8B0C68BB2317AE7F00A8B7E4 /* LJModulesGroupModel.h */,
+				8B0C68BC2317AE7F00A8B7E4 /* LJModulesGroupModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -687,13 +809,48 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8BDCD7CF2313A2DE003FD426 /* LJAppInfo */ = {
+		8BDCD7CF2313A2DE003FD426 /* LJGlobalConfigInfo */ = {
 			isa = PBXGroup;
 			children = (
-				8BDCD7D02313A2FD003FD426 /* LJAppInfo.h */,
-				8BDCD7D12313A2FD003FD426 /* LJAppInfo.m */,
+				8B0414852318F3A8008E3D16 /* LJGlobalConfigInfo.h */,
+				8B0414862318F3A8008E3D16 /* LJGlobalConfigInfo.m */,
 			);
-			path = LJAppInfo;
+			path = LJGlobalConfigInfo;
+			sourceTree = "<group>";
+		};
+		8BE7D3D2231CB5BA006BB060 /* LJDebug */ = {
+			isa = PBXGroup;
+			children = (
+				8BE7D3DD231CBB32006BB060 /* LJSandBox */,
+				8BE7D3D3231CB5DD006BB060 /* LJDebug.h */,
+				8BE7D3D7231CB6B3006BB060 /* LJDebugManager.h */,
+				8BE7D3D8231CB6B3006BB060 /* LJDebugManager.m */,
+				8BE7D3DA231CB815006BB060 /* LJDebugColorStrawManager.h */,
+				8BE7D3DB231CB815006BB060 /* LJDebugColorStrawManager.m */,
+			);
+			path = LJDebug;
+			sourceTree = "<group>";
+		};
+		8BE7D3DD231CBB32006BB060 /* LJSandBox */ = {
+			isa = PBXGroup;
+			children = (
+				8BC3D2EB231EC98C00ACA77D /* LJSandBoxViewController.h */,
+				8BC3D2EC231EC98C00ACA77D /* LJSandBoxViewController.m */,
+			);
+			path = LJSandBox;
+			sourceTree = "<group>";
+		};
+		8BE7D3E4231CBDF1006BB060 /* Globel */ = {
+			isa = PBXGroup;
+			children = (
+				8BE7D3E5231CBE4D006BB060 /* LJTableViewSliderCell.h */,
+				8BE7D3E6231CBE4D006BB060 /* LJTableViewSliderCell.m */,
+				8BE7D3E8231CBE61006BB060 /* LJTableViewSwitchCell.h */,
+				8BE7D3E9231CBE61006BB060 /* LJTableViewSwitchCell.m */,
+				8BE7D3EB231CBEA1006BB060 /* LJTableViewTextFieldCell.h */,
+				8BE7D3EC231CBEA1006BB060 /* LJTableViewTextFieldCell.m */,
+			);
+			path = Globel;
 			sourceTree = "<group>";
 		};
 		C9EAE4A1D608761A90B26D61 /* Pods */ = {
@@ -817,7 +974,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B041498231B9D4B008E3D16 /* nav_more_black.png in Resources */,
 				8BDCD7452313726D003FD426 /* LaunchScreen.storyboard in Resources */,
+				8B041494231B9D4B008E3D16 /* nav_more_white@2x.png in Resources */,
+				8B041496231B9D4B008E3D16 /* nav_more_black@3x.png in Resources */,
+				8B041497231B9D4B008E3D16 /* nav_more_black@2x.png in Resources */,
+				8B041493231B9D4B008E3D16 /* nav_more_white@3x.png in Resources */,
+				8B041495231B9D4B008E3D16 /* nav_more_white.png in Resources */,
 				8BDCD7422313726D003FD426 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -929,8 +1092,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF1CADC23164FE7006D3CF6 /* NSObject+LJKit.m in Sources */,
+				8BC3D2ED231EC98C00ACA77D /* LJSandBoxViewController.m in Sources */,
 				8BAC64612315103A00BD3169 /* LJShareContentView.m in Sources */,
 				8BDCD7D52313A4C8003FD426 /* UIColor+LJKit.m in Sources */,
+				8B04148A2318FE74008E3D16 /* LJViewControllerConfig.m in Sources */,
 				8BDCD7B92313846A003FD426 /* LJRegisterController.m in Sources */,
 				8BDCD7B623138453003FD426 /* LJLoginController.m in Sources */,
 				8BDCD77E231377C0003FD426 /* LJMainTabBarController.m in Sources */,
@@ -938,39 +1104,52 @@
 				8BDCD77323137601003FD426 /* LJAppDelegate.m in Sources */,
 				8BDCD79323137EC8003FD426 /* NSString+LJKit.m in Sources */,
 				8BBA794E2315829800C56A89 /* LJDialogViewController.m in Sources */,
+				8B0C68BA2317AD3300A8B7E4 /* LJModulesModel.m in Sources */,
 				8BDCD7FD2313CE50003FD426 /* LJHttpUploadModel.m in Sources */,
 				8BDCD7CB23138525003FD426 /* LJDiscoverController.m in Sources */,
 				8BDCD7482313726D003FD426 /* main.m in Sources */,
 				8BBA794B231580FA00C56A89 /* LJActionSheetWindow.m in Sources */,
+				8BE7D3F0231CD9E7006BB060 /* UIView+Gesture.m in Sources */,
+				8B0C68BD2317AE7F00A8B7E4 /* LJModulesGroupModel.m in Sources */,
 				8BDA4F9E2314C3CA0088009C /* LJDesktopClockController.m in Sources */,
 				8BDCD7F12313C340003FD426 /* LJHttpResponse.m in Sources */,
+				8B0C68C02317B10900A8B7E4 /* LJModulesCollectionView.m in Sources */,
 				8BDA4F8D231423190088009C /* UIViewController+LJKit.m in Sources */,
 				8BDCD78323137820003FD426 /* LJAppDelegate+LJKit.m in Sources */,
 				8BDCD7F72313C38B003FD426 /* LJHttpResponseSerializer.m in Sources */,
+				8BE7D3D9231CB6B3006BB060 /* LJDebugManager.m in Sources */,
 				8BDA4FA42314C4960088009C /* LJDesktopClockControlView.m in Sources */,
 				8BAC6470231522B700BD3169 /* LJDialogBaseView.m in Sources */,
 				8BDCD79923137EF3003FD426 /* UILabel+LJKit.m in Sources */,
 				8BDA4F90231423F50088009C /* UIButton+LJKit.m in Sources */,
 				8BDCD7BC23138479003FD426 /* LJForgetPwdController.m in Sources */,
-				8BDCD7D22313A2FD003FD426 /* LJAppInfo.m in Sources */,
+				8BE7D3EA231CBE61006BB060 /* LJTableViewSwitchCell.m in Sources */,
 				8BDCD78D23137E9F003FD426 /* UIImage+LJKit.m in Sources */,
 				8BDCD7AD23138415003FD426 /* LJBaseViewController.m in Sources */,
+				8B0C68C32317B4FC00A8B7E4 /* LJModulesCollectionViewCell.m in Sources */,
 				8BDCD7FA2313C3B3003FD426 /* LJHttpRequestSerializer.m in Sources */,
 				8BDCD7CE2313853B003FD426 /* LJMineController.m in Sources */,
 				8BDCD77B231377A8003FD426 /* LJMainNavigationController.m in Sources */,
 				8BDCD8002313D740003FD426 /* UIImageView+LJKit.m in Sources */,
+				8B04149B231B9DC0008E3D16 /* LJDesktopClockControlSettingsView.m in Sources */,
 				8BDCD7C823138516003FD426 /* LJHomeController.m in Sources */,
 				8BDCD79023137EB6003FD426 /* NSDate+LJKit.m in Sources */,
 				8BDA4FA12314C4850088009C /* LJDesktopClockContentView.m in Sources */,
 				8BDCD78A23137E8E003FD426 /* UIView+LJKit.m in Sources */,
 				8BDA4F8623141CDF0088009C /* LJLoginView.m in Sources */,
 				8BDCD7EE2313C2C9003FD426 /* LJHttpManager.m in Sources */,
+				8B0414872318F3A8008E3D16 /* LJGlobalConfigInfo.m in Sources */,
 				8BDA4F972314C2590088009C /* LJRegisterView.m in Sources */,
+				8BE7D3DC231CB815006BB060 /* LJDebugColorStrawManager.m in Sources */,
 				8BAC6473231522CD00BD3169 /* LJDialogNormalView.m in Sources */,
+				8BE7D3E7231CBE4D006BB060 /* LJTableViewSliderCell.m in Sources */,
+				8BE7D3ED231CBEA1006BB060 /* LJTableViewTextFieldCell.m in Sources */,
 				8BDCD79623137ED6003FD426 /* UITextField+LJKit.m in Sources */,
 				8BAC645D231501A600BD3169 /* LJShareView.m in Sources */,
 				8BDCD7772313774F003FD426 /* LJBaseNavigationController.m in Sources */,
+				8BE7D3F3231CE492006BB060 /* UIGestureRecognizer+LJKit.m in Sources */,
 				8BDCD7F42313C34D003FD426 /* LJHttpRequest.m in Sources */,
+				8BE7D3F6231CFAA0006BB060 /* LJDesktopClockContentEditView.m in Sources */,
 				8BDCD7A42313818B003FD426 /* LJHttpUrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1147,7 +1326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = liujing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1168,7 +1347,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = liujing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

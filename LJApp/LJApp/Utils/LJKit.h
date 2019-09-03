@@ -15,4 +15,6 @@
 #import "LJHttpManager.h"
 #import "LJKitDefine.h"
 
+#import "LJDebug.h"
+
 #endif /* LJKit_h */
